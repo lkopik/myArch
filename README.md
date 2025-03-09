@@ -1,0 +1,2 @@
+# myArch
+all config
