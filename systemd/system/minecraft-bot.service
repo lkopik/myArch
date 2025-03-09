@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot for Minecraft Server Management
+After=network.target
+
+[Service]
+User=ula
+WorkingDirectory=/home/ula/minecraft-server
+ExecStart=/usr/bin/python /home/ula/minecraft-server/bot.py
+Restart=always
+RestartSec=5
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target

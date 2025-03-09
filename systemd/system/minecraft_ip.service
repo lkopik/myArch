@@ -1,0 +1,13 @@
+[Unit]
+Description=Minecraft Server IP (Playit)
+After=network.target
+
+[Service]
+User=ula
+WorkingDirectory=/home/ula/minecraft-server
+ExecStart=/usr/bin/playit
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
